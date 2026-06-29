@@ -56,7 +56,7 @@ function Footer({ t }) {
 
         <div className="d-flex justify-content-center gap-4 mt-4">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/FRIENDS502"
             target="_blank"
             rel="noreferrer"
             className="text-white"
