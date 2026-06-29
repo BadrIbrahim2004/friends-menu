@@ -7,7 +7,7 @@ function FloatingMenu() {
     {
       icon: "fa-whatsapp",
       color: "#25D366",
-      url: "https://wa.me/2012727701712",
+      url: "https://wa.me/201272701712",
     },
     { icon: "fa-phone", color: "#d4af37", url: "tel:0132470441" },
     { icon: "fa-facebook-f", color: "#1877F2", url: "https://www.facebook.com/FRIENDS502" },
