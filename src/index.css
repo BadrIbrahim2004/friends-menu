@@ -1,0 +1,103 @@
+:root {
+  font-family: "Cairo", "Segoe UI", Tahoma, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #f5f5f5;
+  background-color: #121212;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(212, 175, 55, 0.15), transparent 32%),
+    #121212;
+  color: #f5f5f5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  text-align: inherit;
+  display: flex;
+  flex-direction: column;
+  direction: inherit;
+}
+
+.app-shell {
+  overflow-x: hidden;
+}
+
+.category-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  white-space: nowrap;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.announcement-scroll {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-marquee 15s linear infinite;
+}
+
+.announcement-scroll span {
+  padding-right: 2rem;
+}
+
+/* Hide duplicate on small screens */
+@media (max-width: 767.98px) {
+  .announcement-scroll {
+    animation: scroll-marquee 15s linear infinite;
+  }
+
+  .announcement-scroll span:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .category-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.3rem;
+    scrollbar-width: none;
+  }
+
+  .category-bar::-webkit-scrollbar {
+    display: none;
+  }
+}
