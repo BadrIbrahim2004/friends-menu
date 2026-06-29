@@ -54,11 +54,11 @@ function Header({ t, lang, toggleLang }) {
       >
         <div
           className="fw-bold m-0 text-center text-sm-start"
-          style={{
-            letterSpacing: "-0.5px",
-            fontSize: "clamp(1.3rem, 3.5vw, 1.75rem)",
-            lineHeight: "1.2",
-          }}
+          //   style={{
+          //     letterSpacing: "-0.5px",
+          //     fontSize: "clamp(1.3rem, 3.5vw, 1.75rem)",
+          //     lineHeight: "1.2",
+          //   }}
         >
           <span className="text-white">Friends</span>
           <span style={{ color: "#d4af37" }}> Desserts</span>

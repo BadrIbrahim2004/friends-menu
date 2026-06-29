@@ -2,7 +2,7 @@ export const menuData = {
   ar: {
     announcement: "🚚 متاح الآن خدمة التوصيل لجميع الفروع.. تواصل معنا",
     currency: "ج.م",
-    googleMapsText: "دلّعنا بتقييمك على جوجل ★",
+    googleMapsText: "دلّعنا بتقييمك  ★",
     sliderTexts: [
       "مخبوزات فريندز الطازجة 🥐",
       "حلويات شرقية أصيلة بالسمن البلدي ✨",
